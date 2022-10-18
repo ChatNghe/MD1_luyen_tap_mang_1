@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txt">
+<button id="btn" onclick="check()">check</button>
+<p id="result"></p>
+<script>
+    const arr = [1, -12, 14, -8, -9, 32, -8, 4, 15, 5]
+    let flag = 0;
+    function check() {
+        let a = +document.getElementById("txt").value;
+        for (let i =0;i<arr.length;i++) {
+            flag =0;
+            if (a === arr[i]) {
+                flag = 1;
+                document.getElementById("result").innerHTML = "V is in the array";
+                break;
+            }
+        }
+        if (flag ===0) document.getElementById("result").innerHTML = "V is not in the array";
+    }
+
+
+</script>
+</body>
+</html>

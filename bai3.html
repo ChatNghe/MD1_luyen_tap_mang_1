@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const arr = [1,12,14,8,9,32,8,4,15,5]
+  let max = arr[0];
+  let sum =0;
+  for (let i =0;i<arr.length;i++){
+    sum += arr[i];
+    if(arr[i]>max){
+      max = arr[i];
+    }
+  }
+  let aver = sum/arr.length;
+  document.write('max value = '+max+ ', average = '+aver)
+</script>
+</body>
+</html>

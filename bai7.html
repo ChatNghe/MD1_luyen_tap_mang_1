@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="txt">
+    <button type="button" id="btn" onclick="its()">check</button>
+    <p id="result"></p>
+</form>
+
+<script>
+    const arr = [1, -12, 14, -8, -9, 32, -8, 4, 15, 5]
+
+    function its() {
+        let a = parseInt(document.getElementById("txt").value);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === a) {
+                arr.splice(i,1);
+
+            }
+        }
+        document.getElementById("result").innerHTML = arr + '';
+
+    }
+
+</script>
+</body>
+
+</html>
